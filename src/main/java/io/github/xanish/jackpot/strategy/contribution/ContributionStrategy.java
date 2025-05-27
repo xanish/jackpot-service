@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.strategy.contributions;
+package io.github.xanish.jackpot.strategy.contribution;
 
 package io.github.xanish.jackpot.model.Bet;
 package io.github.xanish.jackpot.model.Jackpot;

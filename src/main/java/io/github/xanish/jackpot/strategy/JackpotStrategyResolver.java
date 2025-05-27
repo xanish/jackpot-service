@@ -1,6 +1,6 @@
 package io.github.xanish.jackpot.strategy;
 
-import io.github.xanish.jackpot.strategy.contributions.ContributionStrategy;
+import io.github.xanish.jackpot.strategy.contribution.ContributionStrategy;
 import io.github.xanish.jackpot.strategy.rewards.RewardStrategy;
 import java.util.Map;
 import java.util.Optional;
