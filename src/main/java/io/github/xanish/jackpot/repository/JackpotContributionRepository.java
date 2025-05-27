@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.repositories;
+package io.github.xanish.jackpot.repository;
 
 import io.github.xanish.jackpot.model.JackpotContribution;
 import org.springframework.data.jpa.repository.JpaRepository;
