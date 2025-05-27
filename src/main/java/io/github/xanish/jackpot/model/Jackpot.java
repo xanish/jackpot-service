@@ -1,7 +1,7 @@
 package io.github.xanish.jackpot.model;
 
-import io.github.xanish.jackpot.enum.ContributionType;
-import io.github.xanish.jackpot.enum.RewardType;
+import io.github.xanish.jackpot.type.ContributionType;
+import io.github.xanish.jackpot.type.RewardType;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;

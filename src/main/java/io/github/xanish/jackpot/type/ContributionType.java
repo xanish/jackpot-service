@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.enum;
+package io.github.xanish.jackpot.type;
 
 public enum ContributionType {
     FIXED_PERCENTAGE_CONTRIBUTION,
