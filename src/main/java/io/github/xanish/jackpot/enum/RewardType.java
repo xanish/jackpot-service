@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.enums;
+package io.github.xanish.jackpot.enum;
 
 public enum RewardType {
     FIXED_CHANCE,
