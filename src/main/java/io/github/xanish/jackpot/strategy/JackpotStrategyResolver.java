@@ -1,7 +1,7 @@
-package io.github.xanish.jackpot.strategies;
+package io.github.xanish.jackpot.strategy;
 
-import io.github.xanish.jackpot.strategies.contributions.ContributionStrategy;
-import io.github.xanish.jackpot.strategies.rewards.RewardStrategy;
+import io.github.xanish.jackpot.strategy.contributions.ContributionStrategy;
+import io.github.xanish.jackpot.strategy.rewards.RewardStrategy;
 import java.util.Map;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
