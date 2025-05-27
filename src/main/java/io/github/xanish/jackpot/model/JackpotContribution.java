@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.models;
+package io.github.xanish.jackpot.model;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
@@ -8,11 +8,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "jackpot_rewards")
+@Table(name = "jackpot_contributions")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class JackpotReward {
+public class JackpotContribution {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,9 @@ public class JackpotReward {
     private String betId;
     private String userId;
     private String jackpotId;
-    private BigDecimal jackpotRewardAmount;
+    private BigDecimal stakeAmount;
+    private BigDecimal contributionAmount;
+    private BigDecimal currentJackpotAmountAfterContribution;
     private LocalDateTime createdAt;
 
     @PrePersist

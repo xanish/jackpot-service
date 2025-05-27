@@ -1,6 +1,6 @@
 package io.github.xanish.jackpot.config;
 
-import io.github.xanish.jackpot.models.Bet;
+import io.github.xanish.jackpot.model.Bet;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -43,7 +43,7 @@ public class KafkaConfig {
         props.put(JsonDeserializer.TRUSTED_PACKAGES, "*");
         props.put(
             JsonDeserializer.VALUE_DEFAULT_TYPE,
-            "io.github.xanish.jackpot.models.Bet"
+            "io.github.xanish.jackpot.model.Bet"
         );
         props.put(JsonDeserializer.USE_TYPE_INFO_HEADERS, "false");
 

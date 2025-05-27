@@ -1,7 +1,7 @@
 package io.github.xanish.jackpot.strategies.contributions;
 
-import io.github.xanish.jackpot.models.Bet;
-import io.github.xanish.jackpot.models.Jackpot;
+import io.github.xanish.jackpot.model.Bet;
+import io.github.xanish.jackpot.model.Jackpot;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,7 @@
 package io.github.xanish.jackpot.strategies.contributions;
 
-package io.github.xanish.jackpot.models.Bet;
-package io.github.xanish.jackpot.models.Jackpot;
+package io.github.xanish.jackpot.model.Bet;
+package io.github.xanish.jackpot.model.Jackpot;
 
 import java.math.BigDecimal;
 

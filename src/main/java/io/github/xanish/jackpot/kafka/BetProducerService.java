@@ -1,6 +1,6 @@
 package io.github.xanish.jackpot.kafka;
 
-import io.github.xanish.jackpot.models.Bet;
+import io.github.xanish.jackpot.model.Bet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

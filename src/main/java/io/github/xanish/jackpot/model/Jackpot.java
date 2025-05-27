@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.models;
+package io.github.xanish.jackpot.model;
 
 import io.github.xanish.jackpot.enum.ContributionType;
 import io.github.xanish.jackpot.enum.RewardType;

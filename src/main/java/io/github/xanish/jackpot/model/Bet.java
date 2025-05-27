@@ -1,4 +1,4 @@
-package io.github.xanish.jackpot.models;
+package io.github.xanish.jackpot.model;
 
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;

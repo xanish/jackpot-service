@@ -1,6 +1,6 @@
 package io.github.xanish.jackpot.repositories;
 
-import io.github.xanish.jackpot.models.Jackpot;
+import io.github.xanish.jackpot.model.Jackpot;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
