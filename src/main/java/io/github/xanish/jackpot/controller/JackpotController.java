@@ -36,7 +36,7 @@ public class JackpotController {
     }
 
     @PostMapping("/bets")
-    public ResponseEntity<String> publishBet(
+    public ResponseEntity<BetAcceptedResponseDto> publishBet(
         @Valid @RequestBody BetRequestDto betRequestDto
     ) {
         Bet bet = new Bet(
