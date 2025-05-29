@@ -40,25 +40,17 @@ public class VariablePercentageContributionStrategy
         BigDecimal basePercentage = jackpot.getContributionValue();
         BigDecimal poolFactor = jackpot
             .getCurrentPoolAmount()
-            .divide(
-                BigDecimal.valueOf(POOL_FACTOR_DIVISOR),
-                0,
-                RoundingMode.FLOOR
-            );
+            .divide(POOL_FACTOR_DIVISOR, 0, RoundingMode.FLOOR);
         BigDecimal reduction = poolFactor.multiply(
-            BigDecimal.valueOf(POOL_PERCENTAGE_REDUCTION_FACTOR)
+            POOL_PERCENTAGE_REDUCTION_FACTOR
         );
         BigDecimal currentPercentage = basePercentage.subtract(reduction);
 
         if (
-            currentPercentage.compareTo(
-                BigDecimal.valueOf(POOL_MINIMUM_CONTRIBUTION_PERCENTAGE)
-            ) <
+            currentPercentage.compareTo(POOL_MINIMUM_CONTRIBUTION_PERCENTAGE) <
             0
         ) {
-            currentPercentage = BigDecimal.valueOf(
-                POOL_MINIMUM_CONTRIBUTION_PERCENTAGE
-            );
+            currentPercentage = POOL_MINIMUM_CONTRIBUTION_PERCENTAGE;
         }
         return bet
             .getBetAmount()
