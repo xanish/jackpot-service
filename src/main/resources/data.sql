@@ -16,9 +16,9 @@ VALUES
         'JP001',
         1000.00,
         1000.00,
-        'FIXED_PERCENTAGE',
+        'FIXED_PERCENTAGE_CONTRIBUTION',
         0.01,
-        'FIXED_CHANCE',
+        'FIXED_CHANCE_REWARD',
         0.05,
         50000.00
     );
@@ -39,9 +39,9 @@ VALUES
         'JP002',
         5000.00,
         5000.00,
-        'VARIABLE_PERCENTAGE',
+        'VARIABLE_PERCENTAGE_CONTRIBUTION',
         0.05,
-        'VARIABLE_CHANCE',
+        'VARIABLE_CHANCE_REWARD',
         0.01,
         100000.00
     );
