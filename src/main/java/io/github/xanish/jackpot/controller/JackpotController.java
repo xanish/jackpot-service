@@ -8,6 +8,7 @@ import io.github.xanish.jackpot.kafka.BetProducerService;
 import io.github.xanish.jackpot.model.Bet;
 import io.github.xanish.jackpot.model.JackpotReward;
 import io.github.xanish.jackpot.service.JackpotService;
+import jakarta.validation.Valid;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
