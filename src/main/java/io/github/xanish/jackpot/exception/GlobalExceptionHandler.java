@@ -51,19 +51,34 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(body, headers, status);
     }
 
-    @ExceptionHandler(IllegalStateException.class)
-    public ResponseEntity<ErrorResponseDto> handleIllegalStateException(
-        Exception ex,
+    @ExceptionHandler(JackpotNotFoundException.class)
+    public ResponseEntity<ErrorResponseDto> handleJackpotNotFoundException(
+        JackpotNotFoundException ex,
         WebRequest request
     ) {
         ErrorResponseDto errorResponse = new ErrorResponseDto(
             System.currentTimeMillis(),
-            HttpStatus.BAD_REQUEST.value(),
+            HttpStatus.NOT_FOUND.value(),
             ex.getMessage(),
             request.getDescription(false).replace("uri=", "")
         );
 
-        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(StrategyNotFoundException.class)
+    public ResponseEntity<ErrorResponseDto> handleStrategyNotFoundException(
+        StrategyNotFoundException ex,
+        WebRequest request
+    ) {
+        ErrorResponseDto errorResponse = new ErrorResponseDto(
+            System.currentTimeMillis(),
+            HttpStatus.NOT_IMPLEMENTED.value(),
+            ex.getMessage(),
+            request.getDescription(false).replace("uri=", "")
+        );
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_IMPLEMENTED);
     }
 
     @ExceptionHandler(Exception.class)
