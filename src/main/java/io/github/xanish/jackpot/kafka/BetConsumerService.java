@@ -1,7 +1,7 @@
 package io.github.xanish.jackpot.kafka;
 
 import io.github.xanish.jackpot.model.Bet;
-import io.github.xanish.jackpot.services.JackpotService;
+import io.github.xanish.jackpot.service.JackpotService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
